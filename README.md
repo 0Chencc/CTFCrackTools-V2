@@ -1,5 +1,5 @@
 # CTFCrackTools-V2
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/0Chencc/CTFCrackTools/master/doc/LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://raw.githubusercontent.com/0Chencc/CTFCrackTools/master/doc/LICENSE)
 [![language](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/0Chencc/CTFCrackTools/)
 
 接受到部分用户的反馈，认为第二版想较于第三版更加好用。
