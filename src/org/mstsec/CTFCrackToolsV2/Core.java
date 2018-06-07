@@ -809,17 +809,26 @@ public class Core{
 	    item.setActionCommand(filename);
 	    item.addActionListener(new ActionListener(){
 	      public void actionPerformed(ActionEvent arg0) {
-	        String input = Core.this.input.getText();
-	        PythonInterpreter interpreter = new PythonInterpreter();
-	        for (JsonElement jsonElement : Plugins) {
-		        JsonObject Plugin = jsonElement.getAsJsonObject();
-		        if(Plugin.get("title").getAsString().equalsIgnoreCase(arg0.getActionCommand().substring(1, arg0.getActionCommand().length()))){
-		        	interpreter.execfile(Plugin.get("path").getAsString());
-		        }
-		    }
-	        PyFunction func = (PyFunction)interpreter.get("main", PyFunction.class);
-	        PyObject res = func.__call__(new PyString(input));
-	        Core.this.output.setText(res.toString());
+			Properties props = new Properties();
+			props.put("python.home",System.getProperty("user.dir")+"/Lib");
+			props.put("python.console.encoding", "UTF-8");
+			props.put("python.security.respectJavaAccessibility", "false");
+			props.put("python.import.site","false");
+			Properties preprops = System.getProperties();
+			PythonInterpreter.initialize(preprops, props, new String[0]);
+			PythonInterpreter interpreter = new PythonInterpreter();
+			PySystemState sys = Py.getSystemState();
+			sys.path.add(System.getProperty("user.dir")+"/Lib/site-packages");
+			String input = Core.this.input.getText();
+			for (JsonElement jsonElement : Plugins) {
+			    JsonObject Plugin = jsonElement.getAsJsonObject();
+			    if(Plugin.get("title").getAsString().equalsIgnoreCase(arg0.getActionCommand().substring(1, arg0.getActionCommand().length()))){
+			    	interpreter.execfile(Plugin.get("path").getAsString());
+			    }
+			}
+			PyFunction func = (PyFunction)interpreter.get("main", PyFunction.class);
+			PyObject res = func.__call__(new PyString(input));
+			Core.this.output.setText(res.toString());
 	      }
 	    });
 	    return item;
