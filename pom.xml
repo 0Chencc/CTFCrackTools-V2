@@ -15,6 +15,7 @@
       </resource>
     </resources>
     <plugins>
+
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.5.1</version>
@@ -34,6 +35,9 @@
             <goals>
               <goal>compile</goal>
             </goals>
+            <configuration>
+              <sourceDirs>${project.basedir}/src/org/mstsec/CTFCrackToolsV2</sourceDirs>
+            </configuration>
           </execution>
           <execution>
             <id>test-compile</id>
