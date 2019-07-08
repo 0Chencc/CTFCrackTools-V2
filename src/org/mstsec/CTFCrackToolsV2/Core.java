@@ -1,10 +1,4 @@
 package org.mstsec.CTFCrackToolsV2;
-/* 米斯特安全团队 Www.Hi-OurLife.Com
- * 作者：A先森_林晨,z13
- * Mail:admin@hi-ourlife.com
- * QQ：627437686
- */
-
 /* MSEC Team Www.Hi-OurLife.Com
  * Author:0chen,z13
  * Mail:mrsafea@gmail.com
@@ -29,6 +23,7 @@ public class Core{
 	Json json = new Json();
 	public JTextArea input=new JTextArea();
 	public JTextArea output=new JTextArea();
+	Func f = new Func();
     public void CryptoWindow(){//主窗口
         Locale language = Locale.getDefault();
         ResourceBundle RB = ResourceBundle.getBundle("info",language);
@@ -45,8 +40,6 @@ public class Core{
 		JMenuItem peig = new JMenuItem(RB.getString("MenuCodeBaconab"));
 		JMenuItem peigd = new JMenuItem(RB.getString("MenuCodeBaconDecode"));
 		JMenuItem zj = new JMenuItem(RB.getString("MenuCodePig"));
-		JMenuItem base64jg = new JMenuItem(RB.getString("MenuCodeBase64gbkEn"));
-		JMenuItem base64cg = new JMenuItem(RB.getString("MenuCodeBase64gbkDe"));
 		JMenuItem base64j = new JMenuItem(RB.getString("MenuCodeBase64utf8En"));
 		JMenuItem base64c = new JMenuItem(RB.getString("MenuCodeBase64utf8De"));
 		JMenuItem morsee = new JMenuItem(RB.getString("MenuCodeMorseEn"));
@@ -98,8 +91,6 @@ public class Core{
 		Ascii.add(zj);
 		Ascii.add(base64j);
 		Ascii.add(base64c);
-		Ascii.add(base64jg);
-		Ascii.add(base64cg);
 		Ascii.add(morsee);
 		Ascii.add(morsed);
 		Ascii.add(reverse);
@@ -232,84 +223,80 @@ public class Core{
 		});
 		//监听按钮
 		caesar.addActionListener(new ActionListener() {//当按下凯撒密码
+			@Override
 		    public void actionPerformed(ActionEvent evt) {
-		    	output.setText(Func.Caesar(input.getText()));
+		    	output.setText(f.Caesar(input.getText()));
 		    } } );
 		peig.addActionListener(new ActionListener() {//当按下培根密码
+			@Override
 		    public void actionPerformed(ActionEvent evt) {
-		    	output.setText(Func.Baconab(input.getText()));
+		    	output.setText(f.BaconCodeDecode(input.getText()));
 		    } } );
 		zj.addActionListener(new ActionListener() {//当按下猪圈密码
+			@Override
 		    public void actionPerformed(ActionEvent evt) {
-		    	output.setText(Func.zjd(input.getText()));
+		    	output.setText(f.PigCode(input.getText()));
 		    } } );
 		rot13.addActionListener(new ActionListener() {//当按下rot13密码
+			@Override
 		    public void actionPerformed(ActionEvent evt) {
-		    	output.setText(Func.Rot13(input.getText()));
+		    	output.setText(f.Rot13(input.getText()));
 		    } } );
 		fence.addActionListener(new ActionListener() {//当按下栅栏密码
+			@Override
 		    public void actionPerformed(ActionEvent evt) {
-		    output.setText(Func.Fence(input.getText()));
+		    output.setText(f.Fence(input.getText()));
 		    } } );
 		base64j.addActionListener(new ActionListener() {//当按下Base64加密时
+			@Override
 		    public void actionPerformed(ActionEvent evt) {
-		    	output.setText(Func.Base64j(input.getText()));
-		    } } );
-		base64jg.addActionListener(new ActionListener() {//当按下Base64解码时
-		    public void actionPerformed(ActionEvent evt) {
-		    	output.setText(Func.Base64jg(input.getText()));
-		    } } );
-		base64cg.addActionListener(new ActionListener() {//当按下Base64解码时
-		    public void actionPerformed(ActionEvent evt) {
-		    	output.setText(Func.Base64cg(input.getText()));
+		    	output.setText(f.Base64en(input.getText()));
 		    } } );
 		base64c.addActionListener(new ActionListener() {//当按下Base64解码时
+			@Override
 		    public void actionPerformed(ActionEvent evt) {
-		    	output.setText(Func.Base64c(input.getText()));
+		    	output.setText(f.Base64de(input.getText()));
 		    } } );
 		morsee.addActionListener(new ActionListener() {//当按下摩斯加密时
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.MorseE(input.getText()));
+				output.setText(f.MorseEncode(input.getText()));
 			}
 		});
 		morsed.addActionListener(new ActionListener() {//当按下摩斯解密时
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.MorseD(input.getText()));
+				output.setText(f.MorseDecode(input.getText()));
 			}
 		});
 		reverse.addActionListener(new ActionListener() {//当按下摩斯解密时
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.reverse(input.getText()));
+				output.setText(f.reverse(input.getText()));
 			}
 		});
 		UrlCodee.addActionListener(new ActionListener(){//当按下Url编码
+		@Override
 		public void actionPerformed(ActionEvent evt){
-			try {
-				output.setText(Func.UrlEncoder(input.getText()));
-			} catch (UnsupportedEncodingException e) {
-				// 
-					e.printStackTrace();
-				}
-			}
+			output.setText(f.UrlEncoder(input.getText()));
+		}
 		});
 		UrlCoded.addActionListener(new ActionListener(){//当按下Url编码解码
+		@Override
 		public void actionPerformed(ActionEvent evt){
-			try {
-				output.setText(Func.UrlDecoder(input.getText()));
-			} catch (UnsupportedEncodingException e) {
-				// 
-					e.printStackTrace();
-				}
-			}
+			output.setText(f.URLDecoder(input.getText()));
+		}
 		});
 		UnicoderStre.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.UnicodeStre(input.getText()));
+				output.setText(f.UnicodeEncode(input.getText()));
 			}
 		});
 		UnicoderStrd.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.UnicodeStrd(input.getText()));
+				output.setText(f.UnicodeDecode(input.getText()));
 			}
 		});    
 		j2z8.addActionListener(new ActionListener(){
@@ -358,6 +345,7 @@ public class Core{
 			}
 		});
 		j8z16.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
 				try{
 					output.setText(new java.math.BigInteger(input.getText(),8).toString(16));
@@ -421,61 +409,73 @@ public class Core{
 			}
 		});
 		UnicodeZascii.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.UnicodeZascii(input.getText()));
+				output.setText(f.UnicodeToAscii(input.getText()));
 			}
 		});
 		asciiZUnicode.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.asciiZUnicode(input.getText()));
+				output.setText(f.AsciiToUnicode(input.getText()));
 			}
 		});
 		rsa.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
 				new Core().rsatools();
 			}
 		});
 		rc4.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
 				new Core().rc4tools();
 			}
 		});
 		b32e.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.Base32j(input.getText()));
+				output.setText(f.Base32en(input.getText()));
 			}
 		});
 		b32d.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.Base32c(input.getText()));
+				output.setText(f.Base32de(input.getText()));
 			}
 		});
-		b16e.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.Base16j(input.getText()));
-			}
-		});
-		b16d.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.Base16c(input.getText()));
-			}
-		});
+//		b16e.addActionListener(new ActionListener(){
+//			@Override
+//			public void actionPerformed(ActionEvent evt){
+//				output.setText(f.Base16en(input.getText()));
+//			}
+//		});
+//		b16d.addActionListener(new ActionListener(){
+//			@Override
+//			public void actionPerformed(ActionEvent evt){
+//				output.setText(f.Base16c(input.getText()));
+//			}
+//		});
 		peigd.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.Bacon(input.getText()));
+				output.setText(f.PigCode(input.getText()));
 			}
 		});
 		r162ascii.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.r162ascii(input.getText()));
+				output.setText(f.HextoString(input.getText()));
 			}
 		});
 		ascii216.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
-				output.setText(Func.ascii216(input.getText()));
+				output.setText(f.StringtoHex(input.getText()));
 			}
 		});
 		girlgifw.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				new Core().girl();
 				
@@ -489,6 +489,7 @@ public class Core{
 			}
 	});	*/
 		aboutme.addActionListener(new ActionListener(){
+			@Override
 			public void actionPerformed(ActionEvent evt){
 				aboutMe();
 			}
@@ -501,6 +502,7 @@ public class Core{
     	py_filter = new FileNameExtensionFilter("Python(.py)",py_suf);
     	py_openfile.setFileFilter(py_filter);
 		addplugin.addActionListener(new ActionListener(){
+			@Override
 		public void actionPerformed(ActionEvent e) {
 	        int py_openframe = py_openfile.showDialog(new JLabel(), "选择/Choose"); 
 	        if (py_openframe == JFileChooser.APPROVE_OPTION){
@@ -546,6 +548,7 @@ public class Core{
     	Radixgui.setVisible(true);
     	Radixgui.setResizable(false);
     	change.addActionListener(new ActionListener(){
+			@Override
     		public void actionPerformed(ActionEvent evt){
 				try{
 		   			//int waitradixint = Integer.parseInt(waitradix.getText());
@@ -595,6 +598,7 @@ public class Core{
         rsady.setBounds(80, 130, 100, 20);
         container.add(rsady);
     	rsady.addActionListener(new ActionListener(){//调用rsatools
+			@Override
     		public void actionPerformed(ActionEvent evt){
              PythonInterpreter interpreter = new PythonInterpreter();
     		 interpreter.execfile(System.getProperty("user.dir")+"\\Plugin\\OS\\rsa.py");
@@ -637,6 +641,7 @@ public class Core{
         RC4crack.setBounds(80, 100, 100, 20);
         container.add(RC4crack);
     	RC4crack.addActionListener(new ActionListener(){//调用rsatools
+			@Override
     		public void actionPerformed(ActionEvent evt){
              PythonInterpreter interpreter = new PythonInterpreter();
     		 interpreter.execfile(System.getProperty("user.dir")+"\\Plugin\\OS\\RC4.py");
@@ -691,61 +696,6 @@ public class Core{
 	}  
 	public static void main(String[] args){//主方法 
 	InitGlobalFont(Zt);//赋值字体
-	String help = (  "*****************************************************"
-			    +   "\n*                                                   *"
-			    +   "\n*                                                   *"
-			    +   "\n*             Weclome to CTFcrackTools              *"
-			    +   "\n*             Autor:0chen                           *"
-			    +   "\n*             Team:MSEC Team                        *"
-			    +   "\n*             Site:www.hi-ourlife.com               *"
-			    +   "\n*                                                   *"
-			    +   "\n*                                                   *"
-			    +   "\n*****************************************************"
-			    +   "\n\nUsage:CTFcrack.jar [-options] [password]\n"
-			    +   "\n-caesar  //This is Crack Caesar Code  调用凯撒密码解码"
-				+   "\n-rot13   //This is Crack Rot13 Code   调用rot13解码"
-				+   "\n-fence   //This is Crack Fence Code   调用栅栏密码解码"
-				+   "\n-bcab    //This is Bacon Upper and    培根大小写转换AB"
-				+   "\n           Lower case change to AB"
-				+   "\n-bcd     //This is Crack Bacon Code   培根密码AB解码"
-				+   "\n-pig     //This is Crack Pig Code     猪圈密码对调");
-	 if (args.length==0){
-	 }else{
-	 switch(args[0]){
-		case "-h":
-			System.out.println(help);
-			System.exit(0);
-			break;
-		case "-caesar":
-			System.out.println(Func.Caesar(args[1]));
-			System.exit(0);
-			break;
-		case "-rot13":
-			System.out.println(Func.Rot13(args[1]));
-			System.exit(0);
-			break;
-		case "-fence":
-			System.out.println(Func.Fence(args[1]));
-			System.exit(0);
-			break;
-		case "-bcab":
-			System.out.println(Func.Baconab(args[1]));
-			System.exit(0);
-			break;
-		case "-bcd":
-			System.out.println(Func.Bacon(args[1]));
-			System.exit(0);
-			break;
-		case "-pig":
-			System.out.println(Func.zjd(args[1]));
-			System.exit(0);
-			break;
-		default:
-			System.out.println("\nMaybe you are make a mistake!\n\n"+help);
-			System.exit(0);
-			break;
-	  }
-	 }
 	 new Core().CryptoWindow();//创建主窗口CryptoWindow
 	}
 	//菜单
