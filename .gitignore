@@ -2,3 +2,5 @@
 /build/
 /bin/
 /target/
+/out/
+/classes/

@@ -11,6 +11,7 @@
         <excludes>
           <exclude>**/*.java</exclude>
           <exclude>**/*.kt</exclude>
+          <exclude>**/*.properties</exclude>
         </excludes>
       </resource>
     </resources>

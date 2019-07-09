@@ -9,5 +9,10 @@
         <module name="CTFCrackTools-V2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CTFCrackTools-V2.res" target="1.8" />
+      <module name="CTFCrackTools-V2.resouc" target="1.8" />
+      <module name="CTFCrackTools-V2.resource" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

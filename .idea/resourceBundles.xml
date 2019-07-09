@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/src/resource/info.properties" />
+    <file url="file://$PROJECT_DIR$/src/resource/info_en.properties" />
+    <file url="file://$PROJECT_DIR$/src/resource/info_zh_CN.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/resource/info.properties" />
+      <file value="file://$PROJECT_DIR$/src/resource/info_en.properties" />
+      <file value="file://$PROJECT_DIR$/src/resource/info_zh_CN.properties" />
+      <base-name>info</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>

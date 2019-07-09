@@ -26,62 +26,62 @@ class Core {
     internal var f=Func()
     fun CryptoWindow() {//主窗口
         val language=Locale.getDefault()
-        val RB=ResourceBundle.getBundle("info", language)
-        val jFrame=JFrame(RB.getString("AppTitle")+v1)
+        val rb=ResourceBundle.getBundle("info",language)
+        val jFrame=JFrame(rb.getString("AppTitle")+v1)
         val frameContainer=jFrame.contentPane
         val springLayout=SpringLayout()
         frameContainer.layout=springLayout
         //
         val mainMenuBar=JMenuBar()
-        val Ascii=JMenu(RB.getString("MenuCode"))
-        val caesar=JMenuItem(RB.getString("MenuCodeCaesar"))
-        val rot13=JMenuItem(RB.getString("MenuCodeRot13"))
-        val fence=JMenuItem(RB.getString("MenuCodeFence"))
-        val peig=JMenuItem(RB.getString("MenuCodeBaconab"))
-        val peigd=JMenuItem(RB.getString("MenuCodeBaconDecode"))
-        val zj=JMenuItem(RB.getString("MenuCodePig"))
-        val base64j=JMenuItem(RB.getString("MenuCodeBase64utf8En"))
-        val base64c=JMenuItem(RB.getString("MenuCodeBase64utf8De"))
-        val morsee=JMenuItem(RB.getString("MenuCodeMorseEn"))
-        val morsed=JMenuItem(RB.getString("MenuCodeMorseDe"))
-        val reverse=JMenuItem(RB.getString("MenuCodeReverse"))
-        val UrlCodee=JMenuItem(RB.getString("MenuCodeURLEn"))
-        val UrlCoded=JMenuItem(RB.getString("MenuCodeURLDe"))
-        val UnicoderStre=JMenuItem(RB.getString("MenuCodeUnicodeEn"))
-        val UnicoderStrd=JMenuItem(RB.getString("MenuCodeUnicodeDe"))
-        val asciiZUnicode=JMenuItem(RB.getString("MenuCodeAsciitoUnicode"))
-        val UnicodeZascii=JMenuItem(RB.getString("MenuCodeUnicodetoAscii"))
+        val Ascii=JMenu(rb.getString("MenuCode"))
+        val caesar=JMenuItem(rb.getString("MenuCodeCaesar"))
+        val rot13=JMenuItem(rb.getString("MenuCodeRot13"))
+        val fence=JMenuItem(rb.getString("MenuCodeFence"))
+        val peig=JMenuItem(rb.getString("MenuCodeBaconab"))
+        val peigd=JMenuItem(rb.getString("MenuCodeBaconDecode"))
+        val zj=JMenuItem(rb.getString("MenuCodePig"))
+        val base64j=JMenuItem(rb.getString("MenuCodeBase64utf8En"))
+        val base64c=JMenuItem(rb.getString("MenuCodeBase64utf8De"))
+        val morsee=JMenuItem(rb.getString("MenuCodeMorseEn"))
+        val morsed=JMenuItem(rb.getString("MenuCodeMorseDe"))
+        val reverse=JMenuItem(rb.getString("MenuCodeReverse"))
+        val UrlCodee=JMenuItem(rb.getString("MenuCodeURLEn"))
+        val UrlCoded=JMenuItem(rb.getString("MenuCodeURLDe"))
+        val UnicoderStre=JMenuItem(rb.getString("MenuCodeUnicodeEn"))
+        val UnicoderStrd=JMenuItem(rb.getString("MenuCodeUnicodeDe"))
+        val asciiZUnicode=JMenuItem(rb.getString("MenuCodeAsciitoUnicode"))
+        val UnicodeZascii=JMenuItem(rb.getString("MenuCodeUnicodetoAscii"))
         //
-        val radixchange=JMenu(RB.getString("MenuRadix"))
+        val radixchange=JMenu(rb.getString("MenuRadix"))
         //JMenuItem radix = new JMenuItem(" 任意进制转换");
-        val j2z8=JMenuItem(RB.getString("MenuRadix2to8"))
-        val j2z10=JMenuItem(RB.getString("MenuRadix2to10"))
-        val j2z16=JMenuItem(RB.getString("MenuRadix2to16"))
-        val j8z2=JMenuItem(RB.getString("MenuRadix8to2"))
-        val j8z10=JMenuItem(RB.getString("MenuRadix8to10"))
-        val j8z16=JMenuItem(RB.getString("MenuRadix8to16"))
-        val j10z2=JMenuItem(RB.getString("MenuRadix10to2"))
-        val j10z8=JMenuItem(RB.getString("MenuRadix10to8"))
-        val j10z16=JMenuItem(RB.getString("MenuRadix10to16"))
-        val j16z2=JMenuItem(RB.getString("MenuRadix16to2"))
-        val j16z8=JMenuItem(RB.getString("MenuRadix16to8"))
-        val j16z10=JMenuItem(RB.getString("MenuRadix16to10"))
+        val j2z8=JMenuItem(rb.getString("MenuRadix2to8"))
+        val j2z10=JMenuItem(rb.getString("MenuRadix2to10"))
+        val j2z16=JMenuItem(rb.getString("MenuRadix2to16"))
+        val j8z2=JMenuItem(rb.getString("MenuRadix8to2"))
+        val j8z10=JMenuItem(rb.getString("MenuRadix8to10"))
+        val j8z16=JMenuItem(rb.getString("MenuRadix8to16"))
+        val j10z2=JMenuItem(rb.getString("MenuRadix10to2"))
+        val j10z8=JMenuItem(rb.getString("MenuRadix10to8"))
+        val j10z16=JMenuItem(rb.getString("MenuRadix10to16"))
+        val j16z2=JMenuItem(rb.getString("MenuRadix16to2"))
+        val j16z8=JMenuItem(rb.getString("MenuRadix16to8"))
+        val j16z10=JMenuItem(rb.getString("MenuRadix16to10"))
         //
-        val Plugin=JMenu(RB.getString("MenuPlugins"))
-        val addplugin=JMenuItem(RB.getString("MenuPluginsAdd"))
-        val rsa=JMenuItem(RB.getString("MenuPluginRSA"))
-        val rc4=JMenuItem(RB.getString("MenuPluginRC4"))
-        val b32e=JMenuItem(RB.getString("MenuPluginBase32En"))
-        val b32d=JMenuItem(RB.getString("MenuPluginBase32De"))
-        val b16e=JMenuItem(RB.getString("MenuPluginBase16En"))
-        val b16d=JMenuItem(RB.getString("MenuPluginBase16De"))
-        val r162ascii=JMenuItem(RB.getString("MenuPlugin16toAscii"))
-        val ascii216=JMenuItem(RB.getString("MenuPluginAsciito16"))
+        val Plugin=JMenu(rb.getString("MenuPlugins"))
+        val addplugin=JMenuItem(rb.getString("MenuPluginsAdd"))
+        val rsa=JMenuItem(rb.getString("MenuPluginRSA"))
+        val rc4=JMenuItem(rb.getString("MenuPluginRC4"))
+        val b32e=JMenuItem(rb.getString("MenuPluginBase32En"))
+        val b32d=JMenuItem(rb.getString("MenuPluginBase32De"))
+        val b16e=JMenuItem(rb.getString("MenuPluginBase16En"))
+        val b16d=JMenuItem(rb.getString("MenuPluginBase16De"))
+        val r162ascii=JMenuItem(rb.getString("MenuPlugin16toAscii"))
+        val ascii216=JMenuItem(rb.getString("MenuPluginAsciito16"))
         //
-        val girlgif=JMenu(RB.getString("MenuGirl"))
-        val girlgifw=JMenuItem(RB.getString("MenuGirlShow"))
-        val Help=JMenu(RB.getString("MenuHelp"))
-        val aboutme=JMenuItem(RB.getString("MenuHelpAbout"))
+        val girlgif=JMenu(rb.getString("MenuGirl"))
+        val girlgifw=JMenuItem(rb.getString("MenuGirlShow"))
+        val Help=JMenu(rb.getString("MenuHelp"))
+        val aboutme=JMenuItem(rb.getString("MenuHelpAbout"))
         mainMenuBar.add(Ascii)
         Ascii.add(caesar)
         Ascii.add(rot13)
@@ -146,7 +146,7 @@ class Core {
         crypto.dividerLocation=250
         val crypto_top=JPanel()
         crypto_top.layout=springLayout
-        val inputL=JLabel(RB.getString("AppInputLabel")+"0")
+        val inputL=JLabel(rb.getString("AppInputLabel")+"0")
         crypto_top.add(inputL)
         springLayout.putConstraint(SpringLayout.NORTH, inputL, 0, SpringLayout.NORTH, crypto_top)
         val inputP=JScrollPane(input)
@@ -159,12 +159,12 @@ class Core {
         //
         val crypto_bottom=JPanel()
         crypto_bottom.layout=springLayout
-        val outpuL=JLabel(RB.getString("AppOutputLabel")+"0")
+        val outpuL=JLabel(rb.getString("AppOutputLabel")+"0")
         crypto_bottom.add(outpuL)
         springLayout.putConstraint(SpringLayout.NORTH, outpuL, 0, SpringLayout.NORTH, crypto_bottom)
         val outputP=JScrollPane(output)
         crypto_bottom.add(outputP)
-        output.text=RB.getString("AppRemarks")
+        output.text=rb.getString("AppRemarks")
         springLayout.putConstraint(SpringLayout.NORTH, outputP, 25, SpringLayout.NORTH, crypto_bottom)
         springLayout.putConstraint(SpringLayout.SOUTH, outputP, 0, SpringLayout.SOUTH, crypto_bottom)
         springLayout.putConstraint(SpringLayout.WEST, outputP, 0, SpringLayout.WEST, crypto_bottom)
@@ -179,7 +179,7 @@ class Core {
         springLayout.putConstraint(SpringLayout.WEST, mainTabbedPane, 0, SpringLayout.WEST, frameContainer)
         //
         val mainBottomBar=JPanel()
-        val ad=JLabel(RB.getString("AppCopyright"))
+        val ad=JLabel(rb.getString("AppCopyright"))
         mainBottomBar.add(ad)
         frameContainer.add(mainBottomBar)
         springLayout.putConstraint(SpringLayout.SOUTH, mainBottomBar, 0, SpringLayout.SOUTH, frameContainer)
@@ -192,34 +192,34 @@ class Core {
             internal var inputlength: Int=0
             override fun changedUpdate(evt: DocumentEvent) {
                 inputlength=input.text.replace("\r|\n".toRegex(), "").length
-                inputL.text=RB.getString("AppInputLabel")+inputlength
+                inputL.text=rb.getString("AppInputLabel")+inputlength
             }
 
             override fun insertUpdate(e: DocumentEvent) {
                 inputlength=input.text.replace("\r|\n".toRegex(), "").length
-                inputL.text=RB.getString("AppInputLabel")+inputlength
+                inputL.text=rb.getString("AppInputLabel")+inputlength
             }
 
             override fun removeUpdate(e: DocumentEvent) {
                 inputlength=input.text.replace("\r|\n".toRegex(), "").length
-                inputL.text=RB.getString("AppInputLabel")+inputlength
+                inputL.text=rb.getString("AppInputLabel")+inputlength
             }
         })
         output.document.addDocumentListener(object : DocumentListener {
             internal var outputlength: Int=0
             override fun changedUpdate(evt: DocumentEvent) {
                 outputlength=output.text.replace("\r|\n".toRegex(), "").length
-                outpuL.text=RB.getString("AppOutputLabel")+outputlength
+                outpuL.text=rb.getString("AppOutputLabel")+outputlength
             }
 
             override fun insertUpdate(e: DocumentEvent) {
                 outputlength=output.text.replace("\r|\n".toRegex(), "").length
-                outpuL.text=RB.getString("AppOutputLabel")+outputlength
+                outpuL.text=rb.getString("AppOutputLabel")+outputlength
             }
 
             override fun removeUpdate(e: DocumentEvent) {
                 outputlength=output.text.replace("\r|\n".toRegex(), "").length
-                outpuL.text=RB.getString("AppOutputLabel")+outputlength
+                outpuL.text=rb.getString("AppOutputLabel")+outputlength
             }
         })
         //监听按钮
@@ -518,8 +518,8 @@ class Core {
 
     private fun girl() {//Girl
         val language=Locale.getDefault()
-        val RB=ResourceBundle.getBundle("info", language)
-        val frame=JFrame(RB.getString("MenuGirlTitle"))
+        val rb=ResourceBundle.getBundle("info", language)
+        val frame=JFrame(rb.getString("MenuGirlTitle"))
         frame.defaultCloseOperation=WindowConstants.DISPOSE_ON_CLOSE
         val imgadd=File(System.getProperty("user.dir")+"\\girl\\girl1.gif")
         val imageIcon=ImageIcon(imgadd.toString())
@@ -531,13 +531,13 @@ class Core {
 
     private fun aboutMe() {
         val language=Locale.getDefault()
-        val RB=ResourceBundle.getBundle("info", language)
+        val rb=ResourceBundle.getBundle("info", language)
         val jframe=JFrame("Help")
         val frame=jframe.contentPane
         jframe.defaultCloseOperation=WindowConstants.DISPOSE_ON_CLOSE
         val sp=SpringLayout()
         val help=JTextArea()
-        help.text=RB.getString("MenuHelpAboutText")
+        help.text=rb.getString("MenuHelpAboutText")
         frame.layout=sp
         frame.add(help)
         sp.putConstraint(SpringLayout.NORTH, help, 0, SpringLayout.NORTH, frame)
