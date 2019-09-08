@@ -3,7 +3,7 @@ apply plugin: 'kotlin'
 apply plugin: 'maven'
 
 group = 'org.mstsec'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 
 description = """CTFCrackTools-V2"""
 
@@ -20,7 +20,6 @@ jar {
 }
 
 repositories {
-        
      maven { url "http://repo.maven.apache.org/maven2" }
      mavenCentral()
 }
