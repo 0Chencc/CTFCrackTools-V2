@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="670aac0a-622c-4d93-a53d-4d2de51f00a8" name="Default Changelist" comment="" />
+    <list default="true" id="670aac0a-622c-4d93-a53d-4d2de51f00a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +48,9 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -81,7 +86,37 @@
       <recent name="D:\Program\Kotlin\CTFCrackTools-V2\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Core">
+  <component name="RunManager" selected="Gradle.CTFCrackTools-V2 [build]">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CTFCrackTools-V2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="CTFCrackTools-V2 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -116,6 +151,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CTFCrackTools-V2 [build]" />
         <item itemvalue="Kotlin.Core" />
         <item itemvalue="Gradle.CTFCrackTools-V2 [jar]" />
       </list>
@@ -133,6 +169,7 @@
       <workItem from="1604987303368" duration="3047000" />
       <workItem from="1605062284232" duration="3170000" />
       <workItem from="1605098006642" duration="699000" />
+      <workItem from="1605098737457" duration="355000" />
     </task>
     <servers />
   </component>
@@ -148,22 +185,22 @@
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state x="2327" y="641" key="Github.CreateGistDialog/0.0.3440.1440@0.0.3440.1440" timestamp="1605098153640" />
-    <state width="1758" height="266" key="GridCell.Tab.0.bottom" timestamp="1605098714240">
+    <state width="1758" height="266" key="GridCell.Tab.0.bottom" timestamp="1605098842723">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state width="1758" height="266" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605098714240" />
-    <state width="1758" height="266" key="GridCell.Tab.0.center" timestamp="1605098714239">
+    <state width="1758" height="266" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605098842723" />
+    <state width="1758" height="266" key="GridCell.Tab.0.center" timestamp="1605098842723">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state width="1758" height="266" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605098714239" />
-    <state width="1758" height="266" key="GridCell.Tab.0.left" timestamp="1605098714239">
+    <state width="1758" height="266" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605098842723" />
+    <state width="1758" height="266" key="GridCell.Tab.0.left" timestamp="1605098842722">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state width="1758" height="266" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605098714239" />
-    <state width="1758" height="266" key="GridCell.Tab.0.right" timestamp="1605098714239">
+    <state width="1758" height="266" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605098842722" />
+    <state width="1758" height="266" key="GridCell.Tab.0.right" timestamp="1605098842723">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state width="1758" height="266" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605098714239" />
+    <state width="1758" height="266" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605098842723" />
     <state x="1824" y="392" key="SettingsEditor" timestamp="1605098116028">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>

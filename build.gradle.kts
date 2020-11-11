@@ -1,6 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 group="org.CTFCrackTools"
-version="3.2.4"
+version="2.2"
 buildscript {
     repositories {
         maven(url = "http://maven.aliyun.com/nexus/content/groups/public/")
