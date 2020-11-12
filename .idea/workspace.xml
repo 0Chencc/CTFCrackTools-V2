@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="670aac0a-622c-4d93-a53d-4d2de51f00a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts.back" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +58,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="f617a681-dfaf-406c-b1e6-9cb0182b6881" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -68,25 +76,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Program\Kotlin\CTFCrackTools-V2\src\main" />
-    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program\Kotlin\CTFCrackTools-V2" />
       <recent name="D:\Program\Kotlin\CTFCrackTools-V2\src" />
       <recent name="D:\Program\Kotlin\CTFCrackTools-V2\src\main" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program\Kotlin\CTFCrackTools-V2\src\main" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.CTFCrackTools-V2 [build]">
+  <component name="RunManager" selected="Gradle.CTFCrackTools-V2 [jar]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -110,6 +119,25 @@
         <option name="taskNames">
           <list>
             <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CTFCrackTools-V2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,9 +179,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CTFCrackTools-V2 [build]" />
-        <item itemvalue="Kotlin.Core" />
         <item itemvalue="Gradle.CTFCrackTools-V2 [jar]" />
+        <item itemvalue="Gradle.CTFCrackTools-V2 [clean]" />
+        <item itemvalue="Kotlin.Core" />
+        <item itemvalue="Gradle.CTFCrackTools-V2 [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +198,10 @@
       <workItem from="1604987303368" duration="3047000" />
       <workItem from="1605062284232" duration="3170000" />
       <workItem from="1605098006642" duration="699000" />
-      <workItem from="1605098737457" duration="355000" />
+      <workItem from="1605098737457" duration="1161000" />
+      <workItem from="1605139603767" duration="1787000" />
+      <workItem from="1605150043932" duration="594000" />
+      <workItem from="1605150875171" duration="448000" />
     </task>
     <servers />
   </component>
@@ -185,26 +217,26 @@
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state x="2327" y="641" key="Github.CreateGistDialog/0.0.3440.1440@0.0.3440.1440" timestamp="1605098153640" />
-    <state width="1758" height="266" key="GridCell.Tab.0.bottom" timestamp="1605098842723">
+    <state width="2563" height="266" key="GridCell.Tab.0.bottom" timestamp="1605150016375">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state width="1758" height="266" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605098842723" />
-    <state width="1758" height="266" key="GridCell.Tab.0.center" timestamp="1605098842723">
+    <state width="2563" height="266" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605150016375" />
+    <state width="2563" height="266" key="GridCell.Tab.0.center" timestamp="1605150016375">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state width="1758" height="266" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605098842723" />
-    <state width="1758" height="266" key="GridCell.Tab.0.left" timestamp="1605098842722">
+    <state width="2563" height="266" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605150016375" />
+    <state width="2563" height="266" key="GridCell.Tab.0.left" timestamp="1605150016375">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state width="1758" height="266" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605098842722" />
-    <state width="1758" height="266" key="GridCell.Tab.0.right" timestamp="1605098842723">
+    <state width="2563" height="266" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605150016375" />
+    <state width="2563" height="266" key="GridCell.Tab.0.right" timestamp="1605150016375">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state width="1758" height="266" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605098842723" />
-    <state x="1824" y="392" key="SettingsEditor" timestamp="1605098116028">
+    <state width="2563" height="266" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605150016375" />
+    <state x="1824" y="392" key="SettingsEditor" timestamp="1605139692177">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state x="1824" y="392" key="SettingsEditor/0.0.3440.1440@0.0.3440.1440" timestamp="1605098116028" />
+    <state x="1824" y="392" key="SettingsEditor/0.0.3440.1440@0.0.3440.1440" timestamp="1605139692177" />
     <state x="1762" y="196" width="1385" height="979" key="dock-window-1" timestamp="1605095364826">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
